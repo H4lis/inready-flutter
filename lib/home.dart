@@ -49,9 +49,8 @@ class HomeApp extends StatelessWidget {
                       child: const Padding(
                         padding:
                             EdgeInsets.symmetric(vertical: 16, horizontal: 14),
-                        child: Text(
-                          'Username',
-                          style: TextStyle(fontSize: 16),
+                        child: TextField(
+                          decoration: InputDecoration(hintText: 'login'),
                         ),
                       ),
                     ),
@@ -71,11 +70,8 @@ class HomeApp extends StatelessWidget {
                     child: const Padding(
                       padding:
                           EdgeInsets.symmetric(horizontal: 14, vertical: 16),
-                      child: Text(
-                        'Password',
-                        style: TextStyle(
-                          fontSize: 16,
-                        ),
+                      child: TextField(
+                        decoration: InputDecoration(hintText: 'password'),
                       ),
                     ),
                   ),
